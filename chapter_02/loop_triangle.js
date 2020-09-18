@@ -1,4 +1,3 @@
-
-for(let x="#"; x.length<=7; x=x+"#"){
-	console.log(x);
-	}
+"use strict";
+for (let x = "#"; x.length <= 7; x = x + "#") {	console.log(x);
+}

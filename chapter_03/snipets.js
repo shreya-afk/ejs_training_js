@@ -1,4 +1,5 @@
-/*
+"use strict";
+//power function
 let power=function(base, exponent){
     let res=1;
     for(let count=1; count<=exponent ; count++){
@@ -9,38 +10,27 @@ let power=function(base, exponent){
 };
 console.log(power(2,10));
 
-//
+// checking scopes
 let x = 10;
 if (true) {
-  let y = 20;
-  var z = 30;
-  console.log(x + y + z);
+    let y = 20;
+    let z = 30;
+    console.log(x + y + z);
 }
 console.log(z);
-//
+
+//arrow function 
 const square= x=>{
     return x*x;
-}
+};
 console.log(square(5));
-//
-const text=()=>{
-    console.log("cookieto");
-}
-text();
 
-//
 
-function greet(who) {
-    console.log("Hello " + who);
-  }
-  greet("Harry");
-  console.log("Bye");
-  */
-  //the call stack
-  function chicken() {
+//the call stack
+function chicken() {
     return egg();
-  }
-  function egg() {
+}
+function egg() {
     return chicken();
-  }
-  console.log(chicken() + " came first.");
+}
+console.log(chicken() + " came first.");
