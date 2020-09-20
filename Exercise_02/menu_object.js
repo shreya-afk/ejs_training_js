@@ -8,7 +8,10 @@ let restaurantMenu={
     restaurantLocation: "Jyothi Circle, Sharavathi Building, Balmatta Rd, Hampankatta, Mangalore, Karnataka 575001",
 
     menu={
-        soup: "Hot & Sour Veg, Manchow Veg, Mushroom, Tomato, Lemon",
+        soup={
+            number1:"Hot & Sour Veg"
+            price: " "
+            , Manchow Veg, Mushroom, Tomato, Lemon",
         starters: "Chicken salt, Honey Chicken, Chicken Lollypop, Drums of Heaven, Dragon Chicken",
         kebabs: " Chilly Milly, Multani kebab, Hariyai kebab, Reshmi kebab, Tanqdi Kebab",
         biryani: "Vegetarian Biryani, Egg Biryani, Neymeen Biryani, Mutton Biryani, Chemeen Biryani",

@@ -31,12 +31,9 @@ let shoppingList={
         quantity: "1 Each"
     },
     meatAndSeafood = {
-        meat: "lamb",
-        quantity: "1 Kg",
-        poultry: "Chicken",
-        quantity: "1.5 Kg",
-        seafood : "fish, crab, lobster",
-        quantity: "1 Kg each"
+        meat: "lamb-1 Kg",
+        poultry: "Chicken-1.5 Kg",
+        seafood : "fish- 1 Kg, crab- 1 Kg, lobster- 1 Kg",
     },
     dairyAndEgg={
         items:"butter, cheese, yogurt, milk",
