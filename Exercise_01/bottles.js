@@ -23,15 +23,15 @@ And then the song (finally) ends.
 "use strict";
 let n = 99;
 while (n > 0) {
-    console.log(n + "bottles of water on the wall");
-    console.log(n + "bottles of water,");
+    console.log(n + " bottles of water on the wall");
+    console.log(n + " bottles of water,");
     console.log("ya’ take one down, ya’ pass it around,");
-    console.log(n - 1 + "bottles of water on the wall. \n");
+    console.log(n - 1 + " bottles of water on the wall. \n");
     n -= 1;
     if (n === 0) {
-        console.log("no bottles of water on the wall");
-        console.log("no bottles of water,");
-        console.log("ya’ can't take one down, ya’ can't pass it around,");
+        console.log(" no bottles of water on the wall");
+        console.log(" no bottles of water,");
+        console.log(" ya’ can't take one down, ya’ can't pass it around,");
         console.log("'cause there are no more bottles of water on the wall. \n");
     }
 }
