@@ -23,14 +23,39 @@ class Group {
         }
         return sets;
     }
+    [Symbol.iterator]() {
+        return new GroupIterator(this);
+    }
 }
-
-let finalSet = new Group()//Group.from([5,200,5,7,5]);
+let finalSet = Group.from([5, 200, 5, 7, 5]);
 finalSet.has(5);
 finalSet.add(20);
 finalSet.delete(8);
 finalSet.add(30);
 finalSet.delete(200);
 console.log(finalSet);
+
+class GroupIterator {
+    constructor(group) {
+        this.position = 0;
+        this.group = group;
+    }
+    next() {
+        if (this.group.values.length >= this.position) {
+            let res = { value: this.group.values[this.position], done: false };
+            this.position++;
+            return res;
+        }
+        else {
+            return { done: true };
+        }
+    }
+}
+for(let value of Group.from(["c","a","t"])) {
+    console.log(value);
+}
+
+
+
 
 
