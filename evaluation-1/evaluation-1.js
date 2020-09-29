@@ -1,8 +1,9 @@
+"use strict";
 class GetDeck {
     constructor() {
         this.deck = [];
         let suits = ["clubs", "diamonds", "hearts", "spades"];
-        let ranks = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+        let ranks = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"];
         for (let suit in suits) {
             for (let rank in ranks) {
                 this.deck.push(`${ranks[rank]} of ${suits[suit]}`);
@@ -28,20 +29,22 @@ class GetDeck {
         return this.deck.splice(0, num);
     }
 }
-class Eights extends GetDeck {
+
+
+class Eights  {
     constructor() {
         this.one = Player();
         this.two = Player();
         this.drawPile = Hand();
         this.discardPile = Hand();
     }
-    
+
     /*Hand() {
         this.deck.shuffle();
         this.one = this.deck.deal(5);
     }*/
     playGame() {
-        Player =one;
+        Player = one;
         // keep playing until there's a winner
         while (!isDone()) {
             displayState();
@@ -63,6 +66,6 @@ function main() {
 }
 
 
-let deck2= new GetDeck();
+let deck2 = new GetDeck();
 console.log(deck2.shuffle());
 console.log(deck2.deal());
